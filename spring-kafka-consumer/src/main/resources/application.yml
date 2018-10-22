@@ -1,0 +1,7 @@
+kafka:
+  bootstrap:
+    server: localhost:9092
+  message:
+    topic:
+      name: message
+    
