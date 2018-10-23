@@ -6,4 +6,12 @@ kafka:
   message:
     topic:
       name: message
-    
+  partitioned:
+    topic:
+      name: partitioned
+  filtered:
+    topic:
+      name: filtered
+  orders:
+    topic:
+      name: orders

@@ -1,0 +1,1908 @@
+2018-10-23 08:25:47.215  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Starting SpringKafkaConsumerApplication on Alexander with PID 1304 (C:\Project\spring\spring-kafka\spring-kafka-consumer\target\classes started by czetsuya in C:\Project\spring\spring-kafka\spring-kafka-consumer)
+2018-10-23 08:25:47.219 DEBUG Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-10-23 08:25:47.220  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : No active profile set, falling back to default profiles: default
+2018-10-23 08:25:47.368  INFO Alexander --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d7148e2: startup date [Tue Oct 23 08:25:47 SGT 2018]; root of context hierarchy
+2018-10-23 08:25:47.899  INFO Alexander --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$94aba26b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-23 08:25:48.244  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8002 (http)
+2018-10-23 08:25:48.264  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8002"]
+2018-10-23 08:25:48.271  INFO Alexander --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-23 08:25:48.272  INFO Alexander --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-23 08:25:48.276  INFO Alexander --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Java\jdk\1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Java/jdk/1.8/bin/../jre/bin/server;C:/Java/jdk/1.8/bin/../jre/bin;C:/Java/jdk/1.8/bin/../jre/lib/amd64;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\OpenVPN\bin;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;%AppData%\npm;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\sbt\bin;C:\Python27\Scripts\;C:\Python27;C:\Users\czetsuya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Apache\maven-3.5.2\bin;C:\Java\elk\logstash-6.2.3\bin;C:\Java\elk\kibana-6.2.3-windows-x86_64\bin;C:\Java\elk\elasticsearch-6.2.3\bin;C:\Users\czetsuya\AppData\Roaming\npm;C:\Users\czetsuya\AppData\Roaming\npm;D:\Apache\hadoop-3.1.1\bin;C:\Python27\bin;D:\Apache\apache-cassandra-3.11.2\bin;C:\Users\czetsuya\AppData\Local\Programs\Microsoft VS Code\bin;D:\Apache\hadoop-3.1.1\bin;D:\Apache\flink-1.6.0\bin;D:\tools;C:\Java\jdk\1.8\bin;D:\Apache\kafka_2.12-2.0.0\bin\windows;C:\Java\eclipse\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-10-23 08:25:48.348  INFO Alexander --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-10-23 08:25:48.348  INFO Alexander --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 983 ms
+2018-10-23 08:25:48.408  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-23 08:25:48.412  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 08:25:48.412  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 08:25:48.412  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 08:25:48.412  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 08:25:48.542  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 08:25:48.705  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d7148e2: startup date [Tue Oct 23 08:25:47 SGT 2018]; root of context hierarchy
+2018-10-23 08:25:48.756  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 08:25:48.758  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 08:25:48.790  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 08:25:48.790  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 08:25:48.946  WARN Alexander --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaListenerContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/kafka/KafkaAnnotationDrivenConfiguration.class]: Unsatisfied dependency expressed through method 'kafkaListenerContainerFactory' parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.kafka.core.ConsumerFactory<java.lang.Object, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-10-23 08:25:48.948  INFO Alexander --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-23 08:25:48.951  INFO Alexander --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2018-10-23 08:25:48.965  INFO Alexander --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-23 08:25:49.048 ERROR Alexander --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method kafkaListenerContainerFactory in org.springframework.boot.autoconfigure.kafka.KafkaAnnotationDrivenConfiguration required a bean of type 'org.springframework.kafka.core.ConsumerFactory' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'kafkaConsumerFactory' in 'KafkaAutoConfiguration' not loaded because @ConditionalOnMissingBean (types: org.springframework.kafka.core.ConsumerFactory; SearchStrategy: all) found beans of type 'org.springframework.kafka.core.ConsumerFactory' consumerFactory
+	- User-defined bean method 'consumerFactory' in 'KafkaMessageConsumerConfiguration'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.kafka.core.ConsumerFactory' in your configuration.
+
+2018-10-23 08:44:48.154  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Starting SpringKafkaConsumerApplication on Alexander with PID 3896 (C:\Project\spring\spring-kafka\spring-kafka-consumer\target\classes started by czetsuya in C:\Project\spring\spring-kafka\spring-kafka-consumer)
+2018-10-23 08:44:48.158 DEBUG Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-10-23 08:44:48.159  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : No active profile set, falling back to default profiles: default
+2018-10-23 08:44:48.299  INFO Alexander --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d7148e2: startup date [Tue Oct 23 08:44:48 SGT 2018]; root of context hierarchy
+2018-10-23 08:44:48.804  INFO Alexander --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$55a3438] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-23 08:44:49.143  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8002 (http)
+2018-10-23 08:44:49.166  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8002"]
+2018-10-23 08:44:49.174  INFO Alexander --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-23 08:44:49.174  INFO Alexander --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-23 08:44:49.178  INFO Alexander --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Java\jdk\1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Java/jdk/1.8/bin/../jre/bin/server;C:/Java/jdk/1.8/bin/../jre/bin;C:/Java/jdk/1.8/bin/../jre/lib/amd64;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\OpenVPN\bin;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;%AppData%\npm;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\sbt\bin;C:\Python27\Scripts\;C:\Python27;C:\Users\czetsuya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Apache\maven-3.5.2\bin;C:\Java\elk\logstash-6.2.3\bin;C:\Java\elk\kibana-6.2.3-windows-x86_64\bin;C:\Java\elk\elasticsearch-6.2.3\bin;C:\Users\czetsuya\AppData\Roaming\npm;C:\Users\czetsuya\AppData\Roaming\npm;D:\Apache\hadoop-3.1.1\bin;C:\Python27\bin;D:\Apache\apache-cassandra-3.11.2\bin;C:\Users\czetsuya\AppData\Local\Programs\Microsoft VS Code\bin;D:\Apache\hadoop-3.1.1\bin;D:\Apache\flink-1.6.0\bin;D:\tools;C:\Java\jdk\1.8\bin;D:\Apache\kafka_2.12-2.0.0\bin\windows;C:\Java\eclipse\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-10-23 08:44:49.249  INFO Alexander --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-10-23 08:44:49.250  INFO Alexander --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 954 ms
+2018-10-23 08:44:49.305  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-23 08:44:49.310  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 08:44:49.310  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 08:44:49.310  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 08:44:49.310  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 08:44:49.439  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 08:44:49.598  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d7148e2: startup date [Tue Oct 23 08:44:48 SGT 2018]; root of context hierarchy
+2018-10-23 08:44:49.655  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 08:44:49.656  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 08:44:49.682  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 08:44:49.682  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 08:44:49.831  WARN Alexander --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaListenerContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/kafka/KafkaAnnotationDrivenConfiguration.class]: Unsatisfied dependency expressed through method 'kafkaListenerContainerFactory' parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.kafka.core.ConsumerFactory<java.lang.Object, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-10-23 08:44:49.832  INFO Alexander --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-23 08:44:49.835  INFO Alexander --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2018-10-23 08:44:49.847  INFO Alexander --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-23 08:44:49.923 ERROR Alexander --- [           main] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaListenerContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/kafka/KafkaAnnotationDrivenConfiguration.class]: Unsatisfied dependency expressed through method 'kafkaListenerContainerFactory' parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.kafka.core.ConsumerFactory<java.lang.Object, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:733)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at com.broodcamp.kafka.SpringKafkaConsumerApplication.main(SpringKafkaConsumerApplication.java:10)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.kafka.core.ConsumerFactory<java.lang.Object, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1506)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:819)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:725)
+	... 19 more
+2018-10-23 08:46:24.409  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Starting SpringKafkaConsumerApplication on Alexander with PID 21848 (C:\Project\spring\spring-kafka\spring-kafka-consumer\target\classes started by czetsuya in C:\Project\spring\spring-kafka\spring-kafka-consumer)
+2018-10-23 08:46:24.413 DEBUG Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-10-23 08:46:24.414  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : No active profile set, falling back to default profiles: default
+2018-10-23 08:46:24.558  INFO Alexander --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d7148e2: startup date [Tue Oct 23 08:46:24 SGT 2018]; root of context hierarchy
+2018-10-23 08:46:25.069  INFO Alexander --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$4f5c9b9e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-23 08:46:25.405  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8002 (http)
+2018-10-23 08:46:25.425  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8002"]
+2018-10-23 08:46:25.433  INFO Alexander --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-23 08:46:25.434  INFO Alexander --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-23 08:46:25.439  INFO Alexander --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Java\jdk\1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Java/jdk/1.8/bin/../jre/bin/server;C:/Java/jdk/1.8/bin/../jre/bin;C:/Java/jdk/1.8/bin/../jre/lib/amd64;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\OpenVPN\bin;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;%AppData%\npm;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\sbt\bin;C:\Python27\Scripts\;C:\Python27;C:\Users\czetsuya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Apache\maven-3.5.2\bin;C:\Java\elk\logstash-6.2.3\bin;C:\Java\elk\kibana-6.2.3-windows-x86_64\bin;C:\Java\elk\elasticsearch-6.2.3\bin;C:\Users\czetsuya\AppData\Roaming\npm;C:\Users\czetsuya\AppData\Roaming\npm;D:\Apache\hadoop-3.1.1\bin;C:\Python27\bin;D:\Apache\apache-cassandra-3.11.2\bin;C:\Users\czetsuya\AppData\Local\Programs\Microsoft VS Code\bin;D:\Apache\hadoop-3.1.1\bin;D:\Apache\flink-1.6.0\bin;D:\tools;C:\Java\jdk\1.8\bin;D:\Apache\kafka_2.12-2.0.0\bin\windows;C:\Java\eclipse\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-10-23 08:46:25.508  INFO Alexander --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-10-23 08:46:25.508  INFO Alexander --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 952 ms
+2018-10-23 08:46:25.564  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-23 08:46:25.568  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 08:46:25.569  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 08:46:25.569  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 08:46:25.570  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 08:46:25.695  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 08:46:25.858  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d7148e2: startup date [Tue Oct 23 08:46:24 SGT 2018]; root of context hierarchy
+2018-10-23 08:46:25.908  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 08:46:25.910  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 08:46:25.934  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 08:46:25.934  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 08:46:26.189  INFO Alexander --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-23 08:46:26.197  INFO Alexander --- [           main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 2147483547
+2018-10-23 08:46:26.213  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = alpha
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 08:46:26.366  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 08:46:26.366  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 08:46:26.370  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 08:46:26.380  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8002"]
+2018-10-23 08:46:26.382  INFO Alexander --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-10-23 08:46:26.395  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8002 (http) with context path ''
+2018-10-23 08:46:26.398  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Started SpringKafkaConsumerApplication in 2.305 seconds (JVM running for 3.627)
+2018-10-23 08:46:26.476  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=alpha] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 08:46:26.479  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-1, groupId=alpha] Revoking previously assigned partitions []
+2018-10-23 08:46:26.479  INFO Alexander --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 08:46:26.480  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=alpha] (Re-)joining group
+2018-10-23 08:46:26.545  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=alpha] Successfully joined group with generation 1
+2018-10-23 08:46:26.546  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-1, groupId=alpha] Setting newly assigned partitions [message-0]
+2018-10-23 08:46:26.558  INFO Alexander --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 08:46:36.872 DEBUG Alexander --- [ntainer#0-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from message=Alpha message
+2018-10-23 08:47:27.964 DEBUG Alexander --- [ntainer#0-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from message=Alpha message
+2018-10-23 09:10:08.036  INFO Alexander --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-10-23 09:10:08.037  INFO Alexander --- [on(2)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d7148e2: startup date [Tue Oct 23 08:46:24 SGT 2018]; root of context hierarchy
+2018-10-23 09:10:08.039  INFO Alexander --- [on(2)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 2147483547
+2018-10-23 09:10:08.043  INFO Alexander --- [ntainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 09:10:08.050  INFO Alexander --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 09:10:08.050  INFO Alexander --- [on(2)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2018-10-23 09:10:08.051  INFO Alexander --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-23 09:45:15.412  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Starting SpringKafkaConsumerApplication on Alexander with PID 56076 (C:\Project\spring\spring-kafka\spring-kafka-consumer\target\classes started by czetsuya in C:\Project\spring\spring-kafka\spring-kafka-consumer)
+2018-10-23 09:45:15.418 DEBUG Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-10-23 09:45:15.419  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : No active profile set, falling back to default profiles: default
+2018-10-23 09:45:15.572  INFO Alexander --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fd83fc1: startup date [Tue Oct 23 09:45:15 SGT 2018]; root of context hierarchy
+2018-10-23 09:45:16.146  INFO Alexander --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$d60cc21b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-23 09:45:16.511  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8002 (http)
+2018-10-23 09:45:16.534  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8002"]
+2018-10-23 09:45:16.542  INFO Alexander --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-23 09:45:16.543  INFO Alexander --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-23 09:45:16.547  INFO Alexander --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Java\jdk\1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Java/jdk/1.8/bin/../jre/bin/server;C:/Java/jdk/1.8/bin/../jre/bin;C:/Java/jdk/1.8/bin/../jre/lib/amd64;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\OpenVPN\bin;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;%AppData%\npm;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\sbt\bin;C:\Python27\Scripts\;C:\Python27;C:\Users\czetsuya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Apache\maven-3.5.2\bin;C:\Java\elk\logstash-6.2.3\bin;C:\Java\elk\kibana-6.2.3-windows-x86_64\bin;C:\Java\elk\elasticsearch-6.2.3\bin;C:\Users\czetsuya\AppData\Roaming\npm;C:\Users\czetsuya\AppData\Roaming\npm;D:\Apache\hadoop-3.1.1\bin;C:\Python27\bin;D:\Apache\apache-cassandra-3.11.2\bin;C:\Users\czetsuya\AppData\Local\Programs\Microsoft VS Code\bin;D:\Apache\hadoop-3.1.1\bin;D:\Apache\flink-1.6.0\bin;D:\tools;C:\Java\jdk\1.8\bin;D:\Apache\kafka_2.12-2.0.0\bin\windows;C:\Java\eclipse\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-10-23 09:45:16.625  INFO Alexander --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-10-23 09:45:16.625  INFO Alexander --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1057 ms
+2018-10-23 09:45:16.681  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-23 09:45:16.686  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 09:45:16.687  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 09:45:16.687  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 09:45:16.687  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 09:45:16.835  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 09:45:17.004  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fd83fc1: startup date [Tue Oct 23 09:45:15 SGT 2018]; root of context hierarchy
+2018-10-23 09:45:17.058  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 09:45:17.060  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 09:45:17.087  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 09:45:17.087  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 09:45:17.310  INFO Alexander --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-23 09:45:17.317  INFO Alexander --- [           main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 2147483547
+2018-10-23 09:45:17.334  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = charlie
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 09:45:17.479  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 09:45:17.479  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 09:45:17.484  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 09:45:17.487  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = alpha
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 09:45:17.493  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 09:45:17.493  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 09:45:17.494  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 09:45:17.495  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = beta
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 09:45:17.500  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 09:45:17.501  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 09:45:17.501  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 09:45:17.502  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 09:45:17.506  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 09:45:17.506  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 09:45:17.507  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 09:45:17.508  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = echo
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 09:45:17.512  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 09:45:17.513  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 09:45:17.513  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 09:45:17.523  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8002"]
+2018-10-23 09:45:17.524  INFO Alexander --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-10-23 09:45:17.537  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8002 (http) with context path ''
+2018-10-23 09:45:17.541  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Started SpringKafkaConsumerApplication in 2.448 seconds (JVM running for 3.833)
+2018-10-23 09:45:17.587  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=charlie] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 09:45:17.587  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-5, groupId=echo] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 09:45:17.587  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=alpha] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 09:45:17.587  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-3, groupId=beta] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 09:45:17.589  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-4, groupId=] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 09:45:17.591  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-3, groupId=beta] Revoking previously assigned partitions []
+2018-10-23 09:45:17.590  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-2, groupId=alpha] Revoking previously assigned partitions []
+2018-10-23 09:45:17.591  INFO Alexander --- [ntainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 09:45:17.591  INFO Alexander --- [ntainer#4-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 09:45:17.591  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-1, groupId=charlie] Revoking previously assigned partitions []
+2018-10-23 09:45:17.591  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-5, groupId=echo] Revoking previously assigned partitions []
+2018-10-23 09:45:17.591  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=alpha] (Re-)joining group
+2018-10-23 09:45:17.591  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-3, groupId=beta] (Re-)joining group
+2018-10-23 09:45:17.591  INFO Alexander --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 09:45:17.591  INFO Alexander --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 09:45:17.591  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=charlie] (Re-)joining group
+2018-10-23 09:45:17.591  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-5, groupId=echo] (Re-)joining group
+2018-10-23 09:45:17.610  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=alpha] Successfully joined group with generation 3
+2018-10-23 09:45:17.611  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-2, groupId=alpha] Setting newly assigned partitions [message-0]
+2018-10-23 09:45:17.613  INFO Alexander --- [ntainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 09:45:17.690  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-3, groupId=beta] Successfully joined group with generation 1
+2018-10-23 09:45:17.691  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-3, groupId=beta] Setting newly assigned partitions [message-0]
+2018-10-23 09:45:17.695  INFO Alexander --- [ntainer#4-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 09:45:17.716  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-5, groupId=echo] Successfully joined group with generation 1
+2018-10-23 09:45:17.716  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-5, groupId=echo] Setting newly assigned partitions [filtered-0]
+2018-10-23 09:45:17.721  INFO Alexander --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [filtered-0]
+2018-10-23 09:45:17.757  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=charlie] Successfully joined group with generation 1
+2018-10-23 09:45:17.758  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-1, groupId=charlie] Setting newly assigned partitions [message-0]
+2018-10-23 09:45:17.763  INFO Alexander --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 09:46:26.078  INFO Alexander --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-10-23 09:46:26.078  INFO Alexander --- [on(2)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fd83fc1: startup date [Tue Oct 23 09:45:15 SGT 2018]; root of context hierarchy
+2018-10-23 09:46:26.080  INFO Alexander --- [on(2)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 2147483547
+2018-10-23 09:46:26.087  INFO Alexander --- [ntainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 09:46:26.087  INFO Alexander --- [ntainer#2-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 09:46:26.087  INFO Alexander --- [ntainer#3-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 09:46:26.087  INFO Alexander --- [ntainer#4-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 09:46:26.087  INFO Alexander --- [ntainer#1-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 09:46:26.090  INFO Alexander --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 09:46:26.098  INFO Alexander --- [ntainer#2-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 09:46:26.100  INFO Alexander --- [ntainer#4-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 09:46:26.101  INFO Alexander --- [ntainer#3-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 09:46:26.102  INFO Alexander --- [ntainer#1-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 09:46:26.102  INFO Alexander --- [on(2)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2018-10-23 09:46:26.103  INFO Alexander --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-23 09:47:07.346  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Starting SpringKafkaConsumerApplication on Alexander with PID 55304 (C:\Project\spring\spring-kafka\spring-kafka-consumer\target\classes started by czetsuya in C:\Project\spring\spring-kafka\spring-kafka-consumer)
+2018-10-23 09:47:07.353 DEBUG Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-10-23 09:47:07.354  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : No active profile set, falling back to default profiles: default
+2018-10-23 09:47:07.550  INFO Alexander --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fd83fc1: startup date [Tue Oct 23 09:47:07 SGT 2018]; root of context hierarchy
+2018-10-23 09:47:08.206  INFO Alexander --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$febfa45d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-23 09:47:08.556  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8002 (http)
+2018-10-23 09:47:08.578  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8002"]
+2018-10-23 09:47:08.587  INFO Alexander --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-23 09:47:08.587  INFO Alexander --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-23 09:47:08.591  INFO Alexander --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Java\jdk\1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Java/jdk/1.8/bin/../jre/bin/server;C:/Java/jdk/1.8/bin/../jre/bin;C:/Java/jdk/1.8/bin/../jre/lib/amd64;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\OpenVPN\bin;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;%AppData%\npm;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\sbt\bin;C:\Python27\Scripts\;C:\Python27;C:\Users\czetsuya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Apache\maven-3.5.2\bin;C:\Java\elk\logstash-6.2.3\bin;C:\Java\elk\kibana-6.2.3-windows-x86_64\bin;C:\Java\elk\elasticsearch-6.2.3\bin;C:\Users\czetsuya\AppData\Roaming\npm;C:\Users\czetsuya\AppData\Roaming\npm;D:\Apache\hadoop-3.1.1\bin;C:\Python27\bin;D:\Apache\apache-cassandra-3.11.2\bin;C:\Users\czetsuya\AppData\Local\Programs\Microsoft VS Code\bin;D:\Apache\hadoop-3.1.1\bin;D:\Apache\flink-1.6.0\bin;D:\tools;C:\Java\jdk\1.8\bin;D:\Apache\kafka_2.12-2.0.0\bin\windows;C:\Java\eclipse\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-10-23 09:47:08.664  INFO Alexander --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-10-23 09:47:08.664  INFO Alexander --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1118 ms
+2018-10-23 09:47:08.726  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-23 09:47:08.730  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 09:47:08.730  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 09:47:08.730  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 09:47:08.731  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 09:47:08.867  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 09:47:09.043  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fd83fc1: startup date [Tue Oct 23 09:47:07 SGT 2018]; root of context hierarchy
+2018-10-23 09:47:09.104  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 09:47:09.105  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 09:47:09.131  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 09:47:09.131  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 09:47:09.357  INFO Alexander --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-23 09:47:09.364  INFO Alexander --- [           main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 2147483547
+2018-10-23 09:47:09.380  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = echo
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 09:47:09.525  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 09:47:09.525  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 09:47:09.529  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 09:47:09.534  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = beta
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 09:47:09.540  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 09:47:09.540  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 09:47:09.540  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 09:47:09.541  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = alpha
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 09:47:09.547  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 09:47:09.547  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 09:47:09.547  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 09:47:09.548  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = charlie
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 09:47:09.554  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 09:47:09.555  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 09:47:09.555  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 09:47:09.556  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 09:47:09.560  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 09:47:09.560  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 09:47:09.561  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 09:47:09.571  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8002"]
+2018-10-23 09:47:09.573  INFO Alexander --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-10-23 09:47:09.590  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8002 (http) with context path ''
+2018-10-23 09:47:09.593  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Started SpringKafkaConsumerApplication in 2.662 seconds (JVM running for 4.162)
+2018-10-23 09:47:09.642  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=echo] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 09:47:09.642  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=beta] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 09:47:09.642  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-4, groupId=charlie] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 09:47:09.642  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-3, groupId=alpha] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 09:47:09.644  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-5, groupId=] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 09:47:09.646  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-2, groupId=beta] Revoking previously assigned partitions []
+2018-10-23 09:47:09.646  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-1, groupId=echo] Revoking previously assigned partitions []
+2018-10-23 09:47:09.646  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-4, groupId=charlie] Revoking previously assigned partitions []
+2018-10-23 09:47:09.646  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-3, groupId=alpha] Revoking previously assigned partitions []
+2018-10-23 09:47:09.647  INFO Alexander --- [ntainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 09:47:09.647  INFO Alexander --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 09:47:09.647  INFO Alexander --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 09:47:09.647  INFO Alexander --- [ntainer#4-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 09:47:09.647  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-4, groupId=charlie] (Re-)joining group
+2018-10-23 09:47:09.647  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=echo] (Re-)joining group
+2018-10-23 09:47:09.647  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=beta] (Re-)joining group
+2018-10-23 09:47:09.647  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-3, groupId=alpha] (Re-)joining group
+2018-10-23 09:47:09.673  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=echo] Successfully joined group with generation 3
+2018-10-23 09:47:09.673  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-3, groupId=alpha] Successfully joined group with generation 5
+2018-10-23 09:47:09.674  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-3, groupId=alpha] Setting newly assigned partitions [message-0]
+2018-10-23 09:47:09.674  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-1, groupId=echo] Setting newly assigned partitions [filtered-0]
+2018-10-23 09:47:09.674  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=beta] Successfully joined group with generation 3
+2018-10-23 09:47:09.675  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-2, groupId=beta] Setting newly assigned partitions [message-0]
+2018-10-23 09:47:09.676  INFO Alexander --- [ntainer#4-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 09:47:09.676  INFO Alexander --- [ntainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 09:47:09.676  INFO Alexander --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [filtered-0]
+2018-10-23 09:47:09.680  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-4, groupId=charlie] Successfully joined group with generation 3
+2018-10-23 09:47:09.680  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-4, groupId=charlie] Setting newly assigned partitions [message-0]
+2018-10-23 09:47:09.682  INFO Alexander --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 09:47:26.296 DEBUG Alexander --- [ntainer#3-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=beta, message=Alpha message
+2018-10-23 09:47:26.296 DEBUG Alexander --- [ntainer#4-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=alpha, message=Alpha message
+2018-10-23 09:47:26.297 DEBUG Alexander --- [ntainer#0-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=charlie, message=Alpha message
+2018-10-23 09:47:26.377 DEBUG Alexander --- [ntainer#1-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=delta, partition=0, message=Hello To Partioned Topic!
+2018-10-23 09:47:26.533 DEBUG Alexander --- [ntainer#1-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=delta, partition=3, message=Hello To Partioned Topic!
+2018-10-23 09:47:26.587 DEBUG Alexander --- [ntainer#2-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=echo, message=Hello World!
+2018-10-23 09:50:47.178  INFO Alexander --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-10-23 09:50:47.178  INFO Alexander --- [on(2)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fd83fc1: startup date [Tue Oct 23 09:47:07 SGT 2018]; root of context hierarchy
+2018-10-23 09:50:47.180  INFO Alexander --- [on(2)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 2147483547
+2018-10-23 09:50:47.186  INFO Alexander --- [ntainer#1-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 09:50:47.187  INFO Alexander --- [ntainer#2-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 09:50:47.187  INFO Alexander --- [ntainer#3-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 09:50:47.187  INFO Alexander --- [ntainer#4-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 09:50:47.187  INFO Alexander --- [ntainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 09:50:47.189  INFO Alexander --- [ntainer#1-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 09:50:47.197  INFO Alexander --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 09:50:47.199  INFO Alexander --- [ntainer#4-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 09:50:47.199  INFO Alexander --- [ntainer#2-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 09:50:47.200  INFO Alexander --- [ntainer#3-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 09:50:47.200  INFO Alexander --- [on(2)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2018-10-23 09:50:47.201  INFO Alexander --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-23 10:06:51.775  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Starting SpringKafkaConsumerApplication on Alexander with PID 61272 (C:\Project\spring\spring-kafka\spring-kafka-consumer\target\classes started by czetsuya in C:\Project\spring\spring-kafka\spring-kafka-consumer)
+2018-10-23 10:06:51.781 DEBUG Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-10-23 10:06:51.782  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : No active profile set, falling back to default profiles: default
+2018-10-23 10:06:51.952  INFO Alexander --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6392827e: startup date [Tue Oct 23 10:06:51 SGT 2018]; root of context hierarchy
+2018-10-23 10:06:52.582  INFO Alexander --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$aa34cb8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-23 10:06:52.971  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8002 (http)
+2018-10-23 10:06:52.993  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8002"]
+2018-10-23 10:06:53.002  INFO Alexander --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-23 10:06:53.002  INFO Alexander --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-23 10:06:53.007  INFO Alexander --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Java\jdk\1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Java/jdk/1.8/bin/../jre/bin/server;C:/Java/jdk/1.8/bin/../jre/bin;C:/Java/jdk/1.8/bin/../jre/lib/amd64;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\OpenVPN\bin;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;%AppData%\npm;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\sbt\bin;C:\Python27\Scripts\;C:\Python27;C:\Users\czetsuya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Apache\maven-3.5.2\bin;C:\Java\elk\logstash-6.2.3\bin;C:\Java\elk\kibana-6.2.3-windows-x86_64\bin;C:\Java\elk\elasticsearch-6.2.3\bin;C:\Users\czetsuya\AppData\Roaming\npm;C:\Users\czetsuya\AppData\Roaming\npm;D:\Apache\hadoop-3.1.1\bin;C:\Python27\bin;D:\Apache\apache-cassandra-3.11.2\bin;C:\Users\czetsuya\AppData\Local\Programs\Microsoft VS Code\bin;D:\Apache\hadoop-3.1.1\bin;D:\Apache\flink-1.6.0\bin;D:\tools;C:\Java\jdk\1.8\bin;D:\Apache\kafka_2.12-2.0.0\bin\windows;C:\Java\eclipse\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-10-23 10:06:53.083  INFO Alexander --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-10-23 10:06:53.084  INFO Alexander --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1258 ms
+2018-10-23 10:06:53.138  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-23 10:06:53.142  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 10:06:53.143  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 10:06:53.143  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 10:06:53.143  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 10:06:53.291  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 10:06:53.464  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6392827e: startup date [Tue Oct 23 10:06:51 SGT 2018]; root of context hierarchy
+2018-10-23 10:06:53.524  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 10:06:53.525  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 10:06:53.555  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 10:06:53.556  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 10:06:53.790  INFO Alexander --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-23 10:06:53.798  INFO Alexander --- [           main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 2147483547
+2018-10-23 10:06:53.814  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orders
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2018-10-23 10:06:53.975  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:06:53.975  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:06:53.980  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:06:53.984  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = alpha
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 10:06:53.989  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:06:53.989  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:06:53.990  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:06:53.991  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = beta
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 10:06:53.997  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:06:53.998  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:06:53.998  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:06:54.004  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = charlie
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 10:06:54.010  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:06:54.010  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:06:54.010  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:06:54.011  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 10:06:54.018  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:06:54.019  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:06:54.020  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:06:54.021  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = echo
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 10:06:54.027  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:06:54.027  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:06:54.028  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:06:54.039  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8002"]
+2018-10-23 10:06:54.041  INFO Alexander --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-10-23 10:06:54.057  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8002 (http) with context path ''
+2018-10-23 10:06:54.062  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Started SpringKafkaConsumerApplication in 2.646 seconds (JVM running for 4.247)
+2018-10-23 10:06:54.117  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-3, groupId=beta] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:06:54.117  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-6, groupId=echo] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:06:54.117  INFO Alexander --- [ntainer#5-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-4, groupId=charlie] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:06:54.117  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=alpha] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:06:54.122  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-5, groupId=] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:06:54.122  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-2, groupId=alpha] Revoking previously assigned partitions []
+2018-10-23 10:06:54.122  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-6, groupId=echo] Revoking previously assigned partitions []
+2018-10-23 10:06:54.122  INFO Alexander --- [ntainer#5-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-4, groupId=charlie] Revoking previously assigned partitions []
+2018-10-23 10:06:54.122  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-3, groupId=beta] Revoking previously assigned partitions []
+2018-10-23 10:06:54.122  INFO Alexander --- [ntainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 10:06:54.122  INFO Alexander --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 10:06:54.122  INFO Alexander --- [ntainer#5-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 10:06:54.122  INFO Alexander --- [ntainer#4-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 10:06:54.123  INFO Alexander --- [ntainer#5-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-4, groupId=charlie] (Re-)joining group
+2018-10-23 10:06:54.123  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-3, groupId=beta] (Re-)joining group
+2018-10-23 10:06:54.123  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-6, groupId=echo] (Re-)joining group
+2018-10-23 10:06:54.123  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=alpha] (Re-)joining group
+2018-10-23 10:06:54.172  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-6, groupId=echo] Successfully joined group with generation 5
+2018-10-23 10:06:54.173  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-6, groupId=echo] Setting newly assigned partitions [filtered-0]
+2018-10-23 10:06:54.174  INFO Alexander --- [ntainer#5-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-4, groupId=charlie] Successfully joined group with generation 5
+2018-10-23 10:06:54.174  INFO Alexander --- [ntainer#5-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-4, groupId=charlie] Setting newly assigned partitions [message-0]
+2018-10-23 10:06:54.174  INFO Alexander --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [filtered-0]
+2018-10-23 10:06:54.175  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-3, groupId=beta] Successfully joined group with generation 5
+2018-10-23 10:06:54.175  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-3, groupId=beta] Setting newly assigned partitions [message-0]
+2018-10-23 10:06:54.177  INFO Alexander --- [ntainer#5-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 10:06:54.178  INFO Alexander --- [ntainer#4-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 10:06:54.179  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=alpha] Successfully joined group with generation 7
+2018-10-23 10:06:54.180  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-2, groupId=alpha] Setting newly assigned partitions [message-0]
+2018-10-23 10:06:54.182  INFO Alexander --- [ntainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 10:06:54.268  WARN Alexander --- [ntainer#2-0-C-1] o.a.k.c.NetworkClient                    : [Consumer clientId=consumer-1, groupId=orders] Error while fetching metadata with correlation id 2 : {orders=LEADER_NOT_AVAILABLE}
+2018-10-23 10:06:54.269  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=orders] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:06:54.270  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-1, groupId=orders] Revoking previously assigned partitions []
+2018-10-23 10:06:54.270  INFO Alexander --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 10:06:54.270  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=orders] (Re-)joining group
+2018-10-23 10:06:54.445  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=orders] Successfully joined group with generation 1
+2018-10-23 10:06:54.445  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-1, groupId=orders] Setting newly assigned partitions [orders-0]
+2018-10-23 10:06:54.451  INFO Alexander --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [orders-0]
+2018-10-23 10:07:19.000 DEBUG Alexander --- [ntainer#1-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=echo, message=Hello World!
+2018-10-23 10:07:19.000 DEBUG Alexander --- [ntainer#4-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=beta, message=Alpha message
+2018-10-23 10:07:19.001 DEBUG Alexander --- [ntainer#3-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=alpha, message=Alpha message
+2018-10-23 10:07:19.004 DEBUG Alexander --- [ntainer#5-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=charlie, message=Alpha message
+2018-10-23 10:07:19.004 DEBUG Alexander --- [ntainer#0-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=delta, partition=0, message=Should be received in partitioned topic.
+2018-10-23 10:07:19.006 DEBUG Alexander --- [ntainer#0-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=delta, partition=3, message=Should be received in partitioned topic.
+2018-10-23 10:07:19.347 DEBUG Alexander --- [ntainer#2-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received order=com.broodcamp.kafka.domain.Order@28aae92
+2018-10-23 10:09:26.408  INFO Alexander --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-10-23 10:09:26.409  INFO Alexander --- [on(2)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6392827e: startup date [Tue Oct 23 10:06:51 SGT 2018]; root of context hierarchy
+2018-10-23 10:09:26.411  INFO Alexander --- [on(2)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 2147483547
+2018-10-23 10:09:26.417  INFO Alexander --- [ntainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:09:26.417  INFO Alexander --- [ntainer#1-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:09:26.417  INFO Alexander --- [ntainer#5-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:09:26.418  INFO Alexander --- [ntainer#2-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:09:26.417  INFO Alexander --- [ntainer#3-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:09:26.417  INFO Alexander --- [ntainer#4-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:09:26.419  INFO Alexander --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:09:26.431  INFO Alexander --- [ntainer#3-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:09:26.434  INFO Alexander --- [ntainer#4-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:09:26.436  INFO Alexander --- [ntainer#5-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:09:26.436  INFO Alexander --- [ntainer#2-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:09:26.437  INFO Alexander --- [ntainer#1-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:09:26.437  INFO Alexander --- [on(2)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2018-10-23 10:09:26.438  INFO Alexander --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-23 10:09:32.803  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Starting SpringKafkaConsumerApplication on Alexander with PID 59540 (C:\Project\spring\spring-kafka\spring-kafka-consumer\target\classes started by czetsuya in C:\Project\spring\spring-kafka\spring-kafka-consumer)
+2018-10-23 10:09:32.807 DEBUG Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Running with Spring Boot v2.0.6.RELEASE, Spring v5.0.10.RELEASE
+2018-10-23 10:09:32.808  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : No active profile set, falling back to default profiles: default
+2018-10-23 10:09:32.959  INFO Alexander --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6392827e: startup date [Tue Oct 23 10:09:32 SGT 2018]; root of context hierarchy
+2018-10-23 10:09:33.532  INFO Alexander --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$9e05ee8c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-23 10:09:33.895  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8002 (http)
+2018-10-23 10:09:33.917  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8002"]
+2018-10-23 10:09:33.927  INFO Alexander --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-10-23 10:09:33.928  INFO Alexander --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-23 10:09:33.933  INFO Alexander --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Java\jdk\1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Java/jdk/1.8/bin/../jre/bin/server;C:/Java/jdk/1.8/bin/../jre/bin;C:/Java/jdk/1.8/bin/../jre/lib/amd64;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\OpenVPN\bin;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;%AppData%\npm;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\sbt\bin;C:\Python27\Scripts\;C:\Python27;C:\Users\czetsuya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Apache\maven-3.5.2\bin;C:\Java\elk\logstash-6.2.3\bin;C:\Java\elk\kibana-6.2.3-windows-x86_64\bin;C:\Java\elk\elasticsearch-6.2.3\bin;C:\Users\czetsuya\AppData\Roaming\npm;C:\Users\czetsuya\AppData\Roaming\npm;D:\Apache\hadoop-3.1.1\bin;C:\Python27\bin;D:\Apache\apache-cassandra-3.11.2\bin;C:\Users\czetsuya\AppData\Local\Programs\Microsoft VS Code\bin;D:\Apache\hadoop-3.1.1\bin;D:\Apache\flink-1.6.0\bin;D:\tools;C:\Java\jdk\1.8\bin;D:\Apache\kafka_2.12-2.0.0\bin\windows;C:\Java\eclipse\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-10-23 10:09:34.016  INFO Alexander --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-10-23 10:09:34.017  INFO Alexander --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1062 ms
+2018-10-23 10:09:34.076  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-10-23 10:09:34.080  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 10:09:34.080  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 10:09:34.080  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 10:09:34.081  INFO Alexander --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 10:09:34.226  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 10:09:34.405  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6392827e: startup date [Tue Oct 23 10:09:32 SGT 2018]; root of context hierarchy
+2018-10-23 10:09:34.464  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 10:09:34.466  INFO Alexander --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 10:09:34.494  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 10:09:34.494  INFO Alexander --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 10:09:34.724  INFO Alexander --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-23 10:09:34.730  INFO Alexander --- [           main] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 2147483547
+2018-10-23 10:09:34.844  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orders
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2018-10-23 10:09:34.896  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:09:34.896  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:09:34.902  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:09:34.907  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = beta
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 10:09:34.915  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:09:34.915  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:09:34.917  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:09:34.918  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 10:09:34.924  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:09:34.924  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:09:34.925  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:09:34.932  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = alpha
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 10:09:34.939  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:09:34.939  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:09:34.939  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:09:34.940  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = charlie
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 10:09:34.945  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:09:34.945  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:09:34.945  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:09:34.946  INFO Alexander --- [           main] o.a.k.c.c.ConsumerConfig                 : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = echo
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-10-23 10:09:34.951  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka version : 1.0.2
+2018-10-23 10:09:34.952  INFO Alexander --- [           main] o.a.k.c.u.AppInfoParser                  : Kafka commitId : 2a121f7b1d402825
+2018-10-23 10:09:34.952  INFO Alexander --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2018-10-23 10:09:34.961  INFO Alexander --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8002"]
+2018-10-23 10:09:34.963  INFO Alexander --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-10-23 10:09:34.978  INFO Alexander --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8002 (http) with context path ''
+2018-10-23 10:09:34.982  INFO Alexander --- [           main] c.b.k.SpringKafkaConsumerApplication     : Started SpringKafkaConsumerApplication in 2.493 seconds (JVM running for 4.009)
+2018-10-23 10:09:35.022  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=beta] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:09:35.022  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=orders] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:09:35.022  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-5, groupId=charlie] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:09:35.022  INFO Alexander --- [ntainer#5-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-4, groupId=alpha] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:09:35.022  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-6, groupId=echo] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:09:35.024  INFO Alexander --- [ntainer#4-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-3, groupId=] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#5-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-4, groupId=alpha] Revoking previously assigned partitions []
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-1, groupId=orders] Revoking previously assigned partitions []
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-5, groupId=charlie] Revoking previously assigned partitions []
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#5-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-6, groupId=echo] Revoking previously assigned partitions []
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-2, groupId=beta] Revoking previously assigned partitions []
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=orders] (Re-)joining group
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#5-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-4, groupId=alpha] (Re-)joining group
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-5, groupId=charlie] (Re-)joining group
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=beta] (Re-)joining group
+2018-10-23 10:09:35.026  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-6, groupId=echo] (Re-)joining group
+2018-10-23 10:09:35.050  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-6, groupId=echo] Successfully joined group with generation 7
+2018-10-23 10:09:35.051  INFO Alexander --- [ntainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-6, groupId=echo] Setting newly assigned partitions [filtered-0]
+2018-10-23 10:09:35.052  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-5, groupId=charlie] Successfully joined group with generation 7
+2018-10-23 10:09:35.052  INFO Alexander --- [ntainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-5, groupId=charlie] Setting newly assigned partitions [message-0]
+2018-10-23 10:09:35.053  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-2, groupId=beta] Successfully joined group with generation 7
+2018-10-23 10:09:35.054  INFO Alexander --- [ntainer#3-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-2, groupId=beta] Setting newly assigned partitions [message-0]
+2018-10-23 10:09:35.054  INFO Alexander --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [filtered-0]
+2018-10-23 10:09:35.055  INFO Alexander --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 10:09:35.055  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-1, groupId=orders] Successfully joined group with generation 3
+2018-10-23 10:09:35.056  INFO Alexander --- [ntainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-1, groupId=orders] Setting newly assigned partitions [orders-0]
+2018-10-23 10:09:35.056  INFO Alexander --- [ntainer#3-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 10:09:35.059  INFO Alexander --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [orders-0]
+2018-10-23 10:09:35.060  INFO Alexander --- [ntainer#5-0-C-1] o.a.k.c.c.i.AbstractCoordinator          : [Consumer clientId=consumer-4, groupId=alpha] Successfully joined group with generation 9
+2018-10-23 10:09:35.061  INFO Alexander --- [ntainer#5-0-C-1] o.a.k.c.c.i.ConsumerCoordinator          : [Consumer clientId=consumer-4, groupId=alpha] Setting newly assigned partitions [message-0]
+2018-10-23 10:09:35.062  INFO Alexander --- [ntainer#5-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [message-0]
+2018-10-23 10:09:53.237 DEBUG Alexander --- [ntainer#3-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=beta, message=Alpha message
+2018-10-23 10:09:53.237 DEBUG Alexander --- [ntainer#1-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=echo, message=Hello World!
+2018-10-23 10:09:53.237 DEBUG Alexander --- [ntainer#5-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=alpha, message=Alpha message
+2018-10-23 10:09:53.240 DEBUG Alexander --- [ntainer#0-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=charlie, message=Alpha message
+2018-10-23 10:09:53.240 DEBUG Alexander --- [ntainer#4-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=delta, partition=0, message=Should be received in partitioned topic.
+2018-10-23 10:09:53.243 DEBUG Alexander --- [ntainer#4-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received from group=delta, partition=3, message=Should be received in partitioned topic.
+2018-10-23 10:09:53.555 DEBUG Alexander --- [ntainer#2-0-C-1] c.b.k.KafkaMessageConsumerConfiguration  : received order=Order [id=1, product=Kafka Essentials, quantity=1, amount=100]
+2018-10-23 10:12:02.461  INFO Alexander --- [on(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-10-23 10:12:02.461  INFO Alexander --- [on(2)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6392827e: startup date [Tue Oct 23 10:09:32 SGT 2018]; root of context hierarchy
+2018-10-23 10:12:02.463  INFO Alexander --- [on(2)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 2147483547
+2018-10-23 10:12:02.470  INFO Alexander --- [ntainer#4-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:12:02.470  INFO Alexander --- [ntainer#1-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:12:02.470  INFO Alexander --- [ntainer#3-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:12:02.470  INFO Alexander --- [ntainer#5-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:12:02.470  INFO Alexander --- [ntainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:12:02.470  INFO Alexander --- [ntainer#2-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2018-10-23 10:12:02.472  INFO Alexander --- [ntainer#4-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:12:02.480  INFO Alexander --- [ntainer#1-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:12:02.485  INFO Alexander --- [ntainer#5-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:12:02.485  INFO Alexander --- [ntainer#2-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:12:02.486  INFO Alexander --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:12:02.486  INFO Alexander --- [ntainer#3-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2018-10-23 10:12:02.487  INFO Alexander --- [on(2)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2018-10-23 10:12:02.488  INFO Alexander --- [on(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
