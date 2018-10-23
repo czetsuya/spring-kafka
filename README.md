@@ -45,8 +45,10 @@ Sends messages to different topics namely:
  - order - receives an object
  
 ## Testing
-1. Run the consumer project. It will run on port 8002.
-2. Run the producer project. Will use port 8001.
+1. Run zookeeper: bin\windows\zookeeper-server-start.bat config\zookeeper.properties.
+2. Run kafka server: bin\windows\kafka-server-start.bat config\server.properties.
+3. Run the consumer project. It will run on port 8002.
+4. Run the producer project. Will use port 8001.
 
 Here's the output of the consumer project:
 ```sh
